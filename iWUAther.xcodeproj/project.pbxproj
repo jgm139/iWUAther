@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C75A4B7E23621381008D2547 /* TextoDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75A4B7D23621381008D2547 /* TextoDelegate.swift */; };
 		C78260FE2361FC0B000CDC3B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78260FD2361FC0B000CDC3B /* AppDelegate.swift */; };
 		C78261002361FC0B000CDC3B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78260FF2361FC0B000CDC3B /* SceneDelegate.swift */; };
 		C78261022361FC0B000CDC3B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78261012361FC0B000CDC3B /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C75A4B7D23621381008D2547 /* TextoDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextoDelegate.swift; sourceTree = "<group>"; };
 		C78260FA2361FC0B000CDC3B /* iWUAther.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iWUAther.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C78260FD2361FC0B000CDC3B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C78260FF2361FC0B000CDC3B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				C78260FD2361FC0B000CDC3B /* AppDelegate.swift */,
 				C78260FF2361FC0B000CDC3B /* SceneDelegate.swift */,
 				C78261012361FC0B000CDC3B /* ViewController.swift */,
+				C75A4B7D23621381008D2547 /* TextoDelegate.swift */,
 				C78261032361FC0B000CDC3B /* Main.storyboard */,
 				C78261062361FC0C000CDC3B /* Assets.xcassets */,
 				C78261082361FC0C000CDC3B /* LaunchScreen.storyboard */,
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C78261022361FC0B000CDC3B /* ViewController.swift in Sources */,
+				C75A4B7E23621381008D2547 /* TextoDelegate.swift in Sources */,
 				C78260FE2361FC0B000CDC3B /* AppDelegate.swift in Sources */,
 				C78261002361FC0B000CDC3B /* SceneDelegate.swift in Sources */,
 			);

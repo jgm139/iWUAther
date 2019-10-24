@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     let OW_URL_BASE_ICON = "https://openweathermap.org/img/w/"
     
     //MARK: Properties
+    var textDelegate = TextoDelegate()
     @IBOutlet weak var weatherImage: UIImageView!
     @IBOutlet weak var weatherLabel: UILabel!
     @IBOutlet weak var weatherCity: UITextField!
@@ -22,7 +23,7 @@ class ViewController: UIViewController {
     //MARK: Functions
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        self.weatherCity.delegate = textDelegate
     }
     
     func consultarTiempo(localidad:String) {
