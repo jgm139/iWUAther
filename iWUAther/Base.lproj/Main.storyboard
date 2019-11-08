@@ -15,26 +15,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="LauncherImage" translatesAutoresizingMaskIntoConstraints="NO" id="qtX-G7-kwD">
-                                <rect key="frame" x="57" y="186" width="300" height="200"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LauncherImage" translatesAutoresizingMaskIntoConstraints="NO" id="qtX-G7-kwD">
+                                <rect key="frame" x="82" y="164" width="250" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="AGM-5N-2Qc"/>
+                                    <constraint firstAttribute="height" constant="200" id="FeF-6y-sj6"/>
+                                </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Busca una ciudad..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MLD-KO-hve">
-                                <rect key="frame" x="57" y="436" width="300" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Busca una ciudad..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MLD-KO-hve">
+                                <rect key="frame" x="122" y="444" width="170.5" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Buscar..." minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ckf-Q5-Jvg">
-                                <rect key="frame" x="107" y="520" width="200" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Buscar..." minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ckf-Q5-Jvg">
+                                <rect key="frame" x="161.5" y="508" width="91" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tmw-4G-kEe">
-                                <rect key="frame" x="132" y="610" width="150" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tmw-4G-kEe">
+                                <rect key="frame" x="136" y="592" width="142" height="32"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <state key="normal" title="Consultar el tiempo"/>
                                 <connections>
@@ -43,6 +43,18 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="MLD-KO-hve" firstAttribute="top" secondItem="qtX-G7-kwD" secondAttribute="bottom" constant="80" id="3p9-2Y-q84"/>
+                            <constraint firstItem="tmw-4G-kEe" firstAttribute="top" secondItem="ckf-Q5-Jvg" secondAttribute="bottom" constant="50" id="4Mo-2Y-qZl"/>
+                            <constraint firstItem="tmw-4G-kEe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9tM-7B-BUK"/>
+                            <constraint firstItem="qtX-G7-kwD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="120" id="BEO-ES-DSX"/>
+                            <constraint firstItem="ckf-Q5-Jvg" firstAttribute="top" secondItem="MLD-KO-hve" secondAttribute="bottom" constant="40" id="JEa-FM-8aj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qtX-G7-kwD" secondAttribute="trailing" constant="82" id="NDL-bt-Yev"/>
+                            <constraint firstItem="MLD-KO-hve" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="T6D-hd-PKc"/>
+                            <constraint firstItem="qtX-G7-kwD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VDU-7p-VSy"/>
+                            <constraint firstItem="ckf-Q5-Jvg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XO7-vO-VXI"/>
+                            <constraint firstItem="qtX-G7-kwD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="82" id="vIx-WE-v3A"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
